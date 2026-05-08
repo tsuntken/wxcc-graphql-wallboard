@@ -5,6 +5,7 @@ export async function callStatsByQueue() {
   let info = await decide();
   let org_id = info.org_id;
   let token = await info.fetchToken;
+  let lookbackDays = 30;
 
   try {
     // graphQL Query

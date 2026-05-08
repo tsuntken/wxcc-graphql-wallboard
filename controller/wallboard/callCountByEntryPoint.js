@@ -5,7 +5,7 @@ export async function callCountByEntryPoint() {
   let info = await decide();
   let org_id = info.org_id;
   let token = await info.fetchToken;
-  let lookbackDays = 7;
+  let lookbackDays = 30;
   console.log(token);
   console.log("lookbackDays=" + lookbackDays);
   
