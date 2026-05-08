@@ -12,7 +12,7 @@ export async function totalAgentSessionsRealTime() {
   {
     #FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.
     task(
-      from: 1673729535000 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
+      from: ${Date.now() - (7 * 24 * 60 * 60 * 1000)} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
       to: ${Date.now()}  #This can be set to Date.now() in ms
       filter: {
         #The main filter for active tasks is isActive: true

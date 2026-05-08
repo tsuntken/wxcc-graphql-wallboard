@@ -5,6 +5,7 @@ export async function callCountByEntryPoint() {
   let info = await decide();
   let org_id = info.org_id;
   let token = await info.fetchToken;
+  let lookbackDays = 7;
   // console.log(token);
 
   try {
@@ -14,7 +15,7 @@ export async function callCountByEntryPoint() {
 				#TOTAL CALLS BY Entry Point
 		
 				task(
-					from: ${Date.now() - (7 * 24 * 60 * 60 * 1000)} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
+					from: ${Date.now() - (lookbackDays * 24 * 60 * 60 * 1000)} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
 					to: ${Date.now()} #This can be set to Date.now() in ms
 					timeComparator: createdTime
 					filter: {
