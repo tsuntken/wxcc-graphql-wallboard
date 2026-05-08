@@ -35,7 +35,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // CORS
-var whitelist = ["http://localhost:3000", "https://sa-graphql.herokuapp.com"];
+var whitelist = ["http://" + URL, "https://sa-graphql.herokuapp.com"];
 var corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {

@@ -1,6 +1,6 @@
 let checkToken = async () => {
   try {
-    const results = await fetch("http://localhost:3000/checkToken");
+    const results = await fetch("http://" + URL + "/checkToken");
   } catch (error) {
     console.log(error);
   }
@@ -8,7 +8,7 @@ let checkToken = async () => {
 
 let fetchData = async () => {
   try {
-    const results = await fetch("http://localhost:3000/callCountByEntryPoint");
+    const results = await fetch("http://" + URL + "/callCountByEntryPoint");
     const response = await results.json();
     const data = await response.data;
     return data;

@@ -1,6 +1,6 @@
 let fetchData = async () => {
   try {
-    const results = await fetch("http://localhost:3000/callStatsByQueue");
+    const results = await fetch("http://" + URL + "/callStatsByQueue");
     const response = await results.json();
     const data = await response.data;
     return data;

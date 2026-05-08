@@ -1,6 +1,6 @@
 let fetchData = async () => {
   try {
-    const results = await fetch("http://localhost:3000/callStatsByAgent");
+    const results = await fetch("http://" + URL + "/callStatsByAgent");
     const response = await results.json();
     const data = await response.data;
     return data;
