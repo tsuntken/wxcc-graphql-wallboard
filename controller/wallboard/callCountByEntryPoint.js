@@ -6,8 +6,9 @@ export async function callCountByEntryPoint() {
   let org_id = info.org_id;
   let token = await info.fetchToken;
   let lookbackDays = 7;
-  // console.log(token);
-
+  console.log(token);
+  console.log("lookbackDays=" + lookbackDays);
+  
   try {
     // graphQL Query
     const query = `
