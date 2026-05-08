@@ -1,8 +1,8 @@
 import fetch from "node-fetch";
 import { decide } from "../decide.js";
 
-console.log("-- START callCountByEntryPoint.js");
-console.log("-- callCountByEntryPoint.js - URL=" + URL);
+console.log("-- START controller/wallboard/callCountByEntryPoint.js");
+console.log("-- controller/wallboard/callCountByEntryPoint.js - URL=" + URL);
 
 export async function callCountByEntryPoint() {
   let info = await decide();

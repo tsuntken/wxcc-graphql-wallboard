@@ -1,5 +1,5 @@
-console.log("-- START view-callCountByEntryPoint.js");
-console.log("-- view-callCountByEntryPoint.js - URL=" + URL);
+console.log("-- START view/wallboard/callCountByEntryPoint.js");
+console.log("-- view/wallboard/callCountByEntryPoint.js - URL=" + URL);
 
 let checkToken = async () => {
   try {
