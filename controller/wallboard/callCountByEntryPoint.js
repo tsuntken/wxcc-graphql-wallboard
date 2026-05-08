@@ -14,7 +14,7 @@ export async function callCountByEntryPoint() {
 				#TOTAL CALLS BY Entry Point
 		
 				task(
-					from: ${Date.now() - (days * 24 * 60 * 60 * 1000)} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
+					from: ${Date.now() - (7 * 24 * 60 * 60 * 1000)} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
 					to: ${Date.now()} #This can be set to Date.now() in ms
 					timeComparator: createdTime
 					filter: {
