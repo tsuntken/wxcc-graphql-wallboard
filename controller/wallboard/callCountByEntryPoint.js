@@ -1,6 +1,9 @@
 import fetch from "node-fetch";
 import { decide } from "../decide.js";
 
+console.log("-- START callCountByEntryPoint.js");
+console.log("-- callCountByEntryPoint.js - URL=" + URL);
+
 export async function callCountByEntryPoint() {
   let info = await decide();
   let org_id = info.org_id;
@@ -66,4 +69,6 @@ export async function callCountByEntryPoint() {
   } catch (error) {
     // console.log(`network issue ${error}`);
   }
+
+  console.log("-- END callCountByEntryPoint.js");
 }
