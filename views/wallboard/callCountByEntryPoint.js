@@ -1,3 +1,6 @@
+console.log("-- START view-callCountByEntryPoint.js");
+console.log("-- view-callCountByEntryPoint.js - URL=" + URL);
+
 let checkToken = async () => {
   try {
     const results = await fetch("http://" + URL + "/checkToken");
